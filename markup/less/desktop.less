@@ -1,0 +1,244 @@
+  /*desktop*/
+  @media screen and (min-width: 979px) {
+    body {
+      background: #666;
+    }
+    #wrapper {
+      width: 960px;
+      margin: 0 auto -410px;
+    }
+    header {
+      padding: 10px 0 0;
+    }
+    #header {
+      height: 102px;
+      margin: 0 0 13px;
+      padding: 0 20px;
+      .border-radius(@BorderRadius10);
+    }
+    .logo{
+      width: 92px;
+      height: 86px;
+      margin: 7px 0 0;
+    }
+    footer {
+      height: 370px;
+      width: 920px;
+      margin: -410px auto 0;
+      padding: 20px;
+    }
+    #content {
+      padding: 15px 20px 425px;
+      .border-radius(@BorderRadiusHalf10);
+    }
+    #columnLeft {
+      padding: 15px 10px;
+    }
+    .desktopNone {
+      display: none;
+    }
+
+    //mainMenu
+    #mainMenu {
+      top: 76px;
+      right: 5px;
+      .mainMenuPointer {
+        display: none !important;
+      }
+      .childMenuPointer {
+        background: url(../img/child_menu_pointer.png) no-repeat;
+        width: 18px;
+        height: 9px;
+        position: absolute;
+        z-index: 5;
+        top: 27px;
+        left: 46%;
+      }
+      .parentLink {
+        text-transform: uppercase;
+        font: 700 @baseFontSize @MavenPro;
+      }
+      .child {
+        position: absolute;
+        display: none;
+        top: 31px;
+        width: 150px;
+        padding: 15px 15px 10px;
+        left: -60px;
+        font-family: @MavenPro;
+        .box-shadow(@shadowMenu);
+        li {
+          padding: 6px 0;
+          border-bottom: 1px solid @white;
+
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+      }
+      .parent {
+        margin: 0 15px;
+        height: 32px;
+        &.hasChild {
+          height: 32px;
+          &:hover {
+            > ul, .childMenuPointer {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    //breadcrumbs
+    #breadcrumbs {
+      margin: 0 0 15px;
+      display: block;
+      font: @font12 @Verdana;
+      color: @gray;
+      a{
+        color: @gray;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      a, span {
+        margin: 0 2px 0 0;
+      }
+    }
+
+    //slider on Main Page
+    .bx-wrapper .bx-controls-direction a{
+        background: url(../img/arrows_desktop.png) no-repeat;
+        width: 32px;
+        height: 36px;
+    }
+    .bxslider .caption {
+      background: rgba(0,0,0,0.58);
+      h2 {
+        font-size: @font36;
+        margin: 8px 0 8px 10px;
+        height: 89px;
+        width: 78%;
+        float: left
+      }
+      .date {
+        float: right;
+        margin: 70px 10px 0 0;
+      }
+    }
+
+    //post List
+    #postList {
+      h2, p, .date, .userData, .icons{
+        width: 450px;
+        float: right;
+      }
+      h2 {
+        margin-top: -5px;
+      }
+      .thumb {
+        width: 215px;
+        float: left;
+        max-height: 150px;
+        overflow: hidden;
+        img {
+          max-width: 215px;
+        }
+      }
+      &.institutList, &.peopleList{
+        .thumb {
+          max-height: 200px;
+        }
+      }
+      .noThumb h2, .noThumb p, .noThumb .date, .noThumb .userData{
+        width: 100%;
+        float: none;
+        margin-top: 0;
+      }
+    }
+
+    //footer
+    footer {
+      .topic {
+        border-bottom: 1px solid @white;
+        margin: 0 0 5px;
+        padding: 0 0 7px 15px;
+      }
+      h3 {
+        font-weight: 700;
+        line-height: 2.3;
+        font-size: @font18;
+      }
+      #footNav {
+        margin: 0 50px 0 0;
+        float: left;
+        li {
+          display: block;
+          width: 205px;
+          padding: 0 0 0 15px;
+          float: left;
+          a{
+            line-height: 1.47;
+            &:first-child {
+              font-weight: 700;
+              line-height: 2.3;
+              font-size: @font18;
+            }
+          }
+        }
+      }
+      .newsLetter {
+        float: left;
+        width: 195px;
+        margin: 0 100px 0 0;
+        p {
+          margin: 0 0 10px;
+        }
+        label {
+          display: block;
+          font-weight: 700;
+          line-height: 1.5;
+        }
+        input[type="text"], input[type="email"] {
+          width: 173px;
+          border-top: 1px solid @gray;
+          border-left: 1px solid @gray;
+          border-right: 1px solid #b7b7b7;
+          border-bottom: 1px solid #b7b7b7;
+          padding: 3px 10px;
+          color: @grayLight;
+          margin: 0 0 10px;
+        }
+        .btn {
+          background: @grayLightest;
+          margin: 10px 0 0;
+        }
+      }
+      .footLinks {
+        float: left;
+        width: 120px;
+        .soc a{
+          display: inline-block;
+          margin: 0 5px 10px 0;
+        }
+        .downloads {
+          margin: 0 0 6px;
+        }
+        .icon_shop {
+          display: block;
+          width: 19px;
+          height: 14px;
+        }
+      }
+    }
+
+    //pager navigation
+    .navPanel {
+      .pager {
+        float: right;
+        text-align: right;
+      }
+    }
+  }

@@ -1,0 +1,43 @@
+/*
+Theme Name: hayek
+Author: mr-basil
+Author URI: http://ddm-studio.com/
+Description: ddm-studio.com
+Version: 1.0
+
+*/
+
+@import url("css/style.css");
+
+.formArea .row .itemRow label span {
+width: auto!important;
+}
+.contentText ul{
+	margin-left: 20px;
+}
+
+.wpcf7-list-item {
+display:block;
+}
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+#postList .item h2 {
+line-height: 30px;
+}

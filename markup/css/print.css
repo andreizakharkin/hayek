@@ -1,0 +1,6 @@
+header, footer, #breadcrumbs, #columnLeft, .debug, .navPanel, .icons, p.more, .backLink, iframe{
+    display: none;
+}
+#columnRight {
+    width: 100%;
+}

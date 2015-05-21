@@ -1,0 +1,251 @@
+  /*tablet*/
+  @media screen and (max-width: 979px) {
+    #header {
+      background-position: 0 -102px;
+      height: 101px;
+      padding: 0 20px;
+    }
+    .logo {
+      width: 226px;
+      height: 77px;
+      margin: 15px 0 0;
+      background-position: 0 -86px;
+    }
+    #wrapper {
+      margin: 0 auto -45px;
+    }
+    footer {
+      height: 35px;
+      margin: -45px 0 0;
+      padding: 10px 20px 0;
+    }
+    #content {
+      padding: 20px 20px 65px;
+    }
+    .tabletNone {
+      display: none;
+    }
+    .moreList {
+      font: @font36 @Gudea;
+      display: block;
+      width: 40px;
+      margin: 0 auto;
+      color: @black;
+      text-decoration: none;
+    }
+
+    //mainMenu
+    #mainMenu {
+      top: 101px;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid #afbdce;
+      background: #365985;
+      display: none;
+      .mainMenuPointer {
+        right: 30px;
+      }
+      .parent {
+        width: 100%;
+        border-bottom: 1px solid #64778e;
+        &:last-child{
+          border-bottom: none;
+        }
+        &.hasChild {
+          span{
+            background: url(../img/main_menu_switcher.png) 100% 0 no-repeat;
+            padding: 0 10px 0 0;
+          }
+        }
+      }
+      .parentLink {
+        display: block;
+        padding: 0 20px;
+        font: @font13 @Gudea;
+        line-height: 2;
+        &.active > span{
+          background-position: 100% 100%;
+        }
+      }
+      .child {
+        display: none;
+        width: 100%;
+        font-family: @MavenPro;
+        li {
+          padding: 5px 30px;
+          border-bottom: 1px solid @white;
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    #mainMenuTrigger {
+      display: block;
+      background: url(../img/menu_trigger_tablet.png) no-repeat;
+      width: 40px;
+      height: 29px;
+      top: 60px;
+    }
+
+    //slider on Main Page
+    .bx-wrapper .bx-controls-direction a{
+        background: url(../img/arrows_tablet.png) no-repeat;
+        width: 38px;
+        height: 47px;
+    }
+    .bxslider .caption {
+      background: #6b6b6c;
+      h2 {
+        font-size: @font29;
+        margin: 5px 10px;
+        height: 74px;
+      }
+      .date {
+        margin: 0 10px 0 0;
+      }
+    }
+
+    //post List
+    #postList {
+      h2 {
+        margin: 0 0 10px;
+      }
+      .thumb {
+        text-align: center;
+        margin: 0 0 30px;
+        img {
+          max-width: 100%;
+        }
+      }
+      .btn{
+        margin: 20px 0 0!important;
+        float: none!important;
+      }
+      &.blogList h2 {
+        margin: 0 0 5px;
+      }
+      iframe {
+        min-height: 200px;
+      }
+      .icons {
+        width: 100%;
+        float: none;
+        margin: 0;
+      }
+      &.publicationList {
+        .thumb {
+          width: 130px;
+          height: 180px;
+          margin: 0 auto 10px;
+          float: none;
+        }
+      }
+      &.searchList {
+        .more {
+          display: block;
+          padding: 10px 0 0;
+        }
+      }
+    }
+
+    //widget List
+    .donationItem .data {
+      background: url(../img/donation_tablet.png) no-repeat 100% 5px;
+      height: 85px;
+      font-size: @font13;
+    }
+
+    //pager navigation
+    .navPanel {
+      .pager {
+        text-align: center;
+      }
+      .more {
+        float: none;
+        text-align: center;
+      }
+    }
+
+    //filters
+    #filters {
+      float: none;
+      .custom-select {
+        margin: 0 0 15px;
+        text-align: center;
+        width: 100%;
+        float: none;
+      }
+    }
+
+    //formArea
+    .formArea {
+      .row {
+        .item {
+          width: 47.7%;
+          &:nth-child(3n+3) {
+            margin: 0 20px 10px 0;
+          }
+          &:nth-child(2n) {
+            margin: 0 0 10px;
+          }
+        }
+        &.additionalInfo {
+          width: 100%;
+        }
+      }
+    }
+
+    //sameBlocks
+    .sameBlocks {
+      .item {
+        width: 96%;
+        float: none;
+        border: none!important;
+      }
+    }
+
+    //popup window
+    .fancybox-skin {
+      padding: 15px!important;
+      h1 {
+        margin: 0 0 10px;
+      }
+      .mapArea {
+        float: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: none;
+        p {
+          width: 50%;
+          float: left;
+        }
+        .printMap {
+          display: none;
+        }
+        .map {
+          margin: 0 0 10px;
+          iframe {
+            height: 350px;
+          }
+        }
+      }
+      .formArea {
+        float: none;
+        width: 100%;
+        .row {
+          .item {
+            width: 48%;
+            margin: 0 3.5% 10px 0;
+            &:nth-child(2n) {
+              margin: 0 0 10px;
+            }
+          }
+          textarea {
+            height: auto;
+          }
+        }
+      }
+    }
+  }
